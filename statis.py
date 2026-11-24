@@ -20,8 +20,8 @@ class Stats:
         self.stats['residual_variance'] = self.get_variance()
         self.stats['parameter_variance'] = self.get_parameters_variance()
         self.stats['forecast_error_variance'] = self.forecast_error_variance()
-        self.stats['asimmetry'] = self.get_skewness()
-        self.stats['curtosi'] = self.get_kurtosis()
+        self.stats['skewness'] = self.get_skewness()
+        self.stats['kurtosis'] = self.get_kurtosis()
         return self.stats
 
 
