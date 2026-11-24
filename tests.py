@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from models import *
+from scipy import stats
 
 
 class DW_test:
@@ -133,18 +134,11 @@ class JarqueBera_test:
         return jb, 5.9915, ok, f"JB={jb:.4f} (crit={5.9915}) -> ok={ok}"
 
 
-class JungBox_test:
-    CHI2_CRITICAL_005 = {
-        1: 3.8415, 2: 5.9915, 3: 7.8147, 4: 9.4877, 5: 11.0705,
-        6: 12.5916, 7: 14.0671, 8: 15.5073, 9: 16.9190, 10: 18.3070,
-        11: 19.6751, 12: 21.0261, 13: 22.3620, 14: 23.6848, 15: 24.9958,
-        16: 26.2962, 17: 27.5871, 18: 28.8693, 19: 30.1435, 20: 31.4104,
-    }
-
+class LjungBox_test: #CONTROLLARE SE E' GIUSTO
     def __init__(self, residuals, lags=10, dof=None):
         self.residuals = residuals
         self.lags = lags
-        self.dof = lags if dof is None else dof
+        self.dof = lags if dof==None else dof 
 
     def test(self):
         T = len(self.residuals)
@@ -153,9 +147,10 @@ class JungBox_test:
         rhos = np.array([np.sum(c[k:] * c[:-k]) / denom for k in range(1, self.lags + 1)])
         ks = np.arange(1, self.lags + 1, dtype=float)
         q = T * (T + 2.0) * np.sum((rhos**2) / (T - ks))
-        crit = self.CHI2_CRITICAL_005[self.dof]
+        crit = stats.chi2.cdf(q, self.dof)
         ok = q <= crit
-        return q, crit, ok, f"Q({self.lags})={q:.4f} (df={self.dof}, crit={crit}) -> ok={ok}"
+        p_value = 1 - crit
+        return q, p_value, ok
 
 
 class ACF_test:
@@ -173,7 +168,7 @@ class ACF_test:
         return values
 
     def _optimal_q(self, values):
-        bound = 1.96 / np.sqrt(len(self.series))
+        bound = 1.96 / np.sqrt(len(self.series)) #SBAGLIATO
         significant_lags = [
             lag for lag in range(1, len(values)) if abs(values[lag]) > bound
         ]
@@ -230,7 +225,7 @@ class PACF_test:
         return values
 
     def _optimal_p(self, values):
-        bound = 1.96 / np.sqrt(len(self.series))
+        bound = 1.96 / np.sqrt(len(self.series)) #QUESTO E' GIUSTO
         significant_lags = [
             lag for lag in range(1, len(values)) if abs(values[lag]) > bound
         ]
