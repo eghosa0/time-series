@@ -71,6 +71,7 @@ class RandomWalk(TimeSerie):
         self.X = y[:-1].reshape(-1, 1)
         self.Y = y[1:]
         self.fitted = self.X[:, 0]
+        self.beta = np.array([1.0])
         self.residuals = self.Y - self.fitted
         return self.fitted
 
