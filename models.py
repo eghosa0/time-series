@@ -121,22 +121,4 @@ if __name__ == "__main__":
 
     test = DW_test(rw)
 
-    print(test.test())
-
-    """import matplotlib.pyplot as plt
-
-    start_idx = model.p + model.q
-    actual_aligned = pricies[start_idx:]
-
-    plt.figure(figsize=(10, 4))
-    plt.plot(actual_aligned, label="Log-prices osservati", alpha=0.8)
-    plt.plot(model.fitted, label=f"Fitted ARMA({model.p}, {model.q})", linestyle="--")
-    plt.title("Log-prices osservati vs Fitted ARMA")
-    plt.xlabel("Osservazioni (finestra allineata)")
-    plt.ylabel("Log-prezzo")
-    plt.legend()
-    plt.grid(True, alpha=0.3)
-    plt.tight_layout()
-    plt.show()"""
-    
-    
+    print(test.test())    
