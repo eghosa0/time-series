@@ -1,9 +1,9 @@
 import numpy as np
-from statistics import Stats
-
+from statis import Stats
 
 class TimeSerie:
     def __init__(self):
+        self.beta = None
         self.X = None
         self.Y = None
         self.fitted = None
@@ -27,26 +27,12 @@ class TimeSerie:
         pass
 
 
-
 class ARMA(TimeSerie):
     def __init__(self, p, q):
         super().__init__()
         self.p = p
         self.q = q
 
-    
-    def get_stats(self):
-        if self.beta is None or self.fitted is None:
-            raise ValueError("Model has not been trained yet. Please call 'train' first.")
-
-        stats = self.stats.compute_stats(
-            parameters=self.beta.shape[0],
-            X=self.X,
-            Y=self.Y,
-            predictions=self.fitted,
-            X_new=self.X[-1],
-        )
-        return stats
 
     def transfomr_dataset(self, y, lag):
         n = len(y)
@@ -65,13 +51,13 @@ class ARMA(TimeSerie):
         beta_AR, fitted_AR, Y_AR, X_AR = self.model(dataset, self.p)
         residuals = Y_AR - fitted_AR
         beta_MA, fitted_MA, Y_MA, X_MA = self.model(residuals, self.q)
-
         self.fitted = fitted_AR[self.q:] + fitted_MA
         self.beta = np.hstack([beta_AR, beta_MA])
         self.X = np.hstack([X_AR[self.q:], X_MA])
         self.Y = Y_AR[self.q:]
-        return self.fitted
+        self.residuals = self.Y - self.fitted
 
+        return self.fitted
 
 
 class RandomWalk(TimeSerie):
@@ -88,26 +74,11 @@ class RandomWalk(TimeSerie):
         self.residuals = self.Y - self.fitted
         return self.fitted
 
-    def get_stats(self):
-        if self.fitted is None:
-            raise ValueError("Model has not been trained yet. Please call 'train' first.")
-
-        stats = self.stats.compute_stats(
-            parameters=1,
-            X=self.X,
-            Y=self.Y,
-            predictions=self.fitted,
-            X_new=self.X[-1],
-        )
-
-        return stats
-
 
 
 
 if __name__ == "__main__":
     from dataset import load
-    from test import DW_test
 
     dataset = load().reset_index()
     pricies = np.log(dataset.iloc[:, 1].values)
@@ -117,8 +88,4 @@ if __name__ == "__main__":
     model.train(pricies)
 
     rw = RandomWalk()
-    rw.train(pricies)
-
-    test = DW_test(rw)
-
-    print(test.test())    
+    rw.train(pricies)   
