@@ -20,6 +20,8 @@ class Stats:
         self.stats['residual_variance'] = self.get_variance()
         self.stats['parameter_variance'] = self.get_parameters_variance()
         self.stats['forecast_error_variance'] = self.forecast_error_variance()
+        self.stats['asimmetry'] = self.get_skewness()
+        self.stats['curtosi'] = self.get_kurtosis()
         return self.stats
 
 
@@ -47,6 +49,24 @@ class Stats:
         er_1 = self.X_new@self.get_parameters_variance()@self.X_new.T + var
         
         return er_1
+
+    def get_skewness(self):
+        res = np.asarray(self.get_residuals(), dtype=float).ravel()
+        centered = res - np.mean(res)
+        m2 = np.mean(centered**2)
+        m3 = np.mean(centered**3)
+        if m2 == 0:
+            return 0.0
+        return float(m3 / (m2**1.5))
+
+    def get_kurtosis(self):
+        res = np.asarray(self.get_residuals(), dtype=float).ravel()
+        centered = res - np.mean(res)
+        m2 = np.mean(centered**2)
+        m4 = np.mean(centered**4)
+        if m2 == 0:
+            return 0.0
+        return float(m4 / (m2**2))
 
     def __str__(self):
         return f"Metrics: {self.stats}"
