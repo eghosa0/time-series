@@ -11,14 +11,16 @@ except NameError:
 DEFAULT_PATH = os.path.join(BASE_DIR, "data", "dataset.csv")
 
 
-def download(path=DEFAULT_PATH, series="dataset", start="2000-01-01"):
+# Serie usata nel progetto: GS10 = rendimento dei Treasury USA a 10 anni,
+# scadenza costante, dati mensili (media dei giorni lavorativi del mese), in %.
+def download(path=DEFAULT_PATH, series="GS10", start="2000-01-01"):
     df = pd.read_csv(FRED_URL.format(series=series), index_col=0, parse_dates=True, na_values=".")
     df.index.name = "date"
     df.columns = [series]
     df = df.loc[start:].dropna()
     path = os.path.abspath(path)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    df.to_csv(os.path.join(BASE_DIR, "data", "dataset.csv"))
+    df.to_csv(path)
     print(f"Salvate {len(df)} osservazioni in: {path}")
     return path
 
@@ -28,7 +30,6 @@ def load(path=DEFAULT_PATH):
     s = df.iloc[:, 0].astype(float)
     s.index.freq = pd.infer_freq(s.index)
     return s
-
 
 
 if __name__ == "__main__":
