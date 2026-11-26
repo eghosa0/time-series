@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.11)  26 NOV 2026 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.11)  26 NOV 2026 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,6 +443,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 27.
+ (report.out) (report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
@@ -486,86 +487,36 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 54
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-LaTeX Warning: Reference `sec:check' on page 1 undefined on input line 54.
-
-
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.56 \newpage
-              [1]
-No file report.toc.
+              [1] (report.toc)
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
 
 
 [2]
-
-LaTeX Warning: Reference `sec:ma1' on page 3 undefined on input line 80.
-
-
-LaTeX Warning: Reference `sec:check' on page 3 undefined on input line 82.
-
-
-LaTeX Warning: File `series.png' not found on input line 86.
+<figures/series.png, id=151, 650.43pt x 361.35pt>
+File: figures/series.png Graphic file (type png)
+<use figures/series.png>
+Package pdftex.def Info: figures/series.png  used on input line 86.
+(pdftex.def)             Requested size: 382.12297pt x 212.29591pt.
 
 
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:86: Package pdftex.def Error: File `series.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 ...graphics[width=0.85\textwidth]{series.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[3{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-
-LaTeX Warning: Reference `tab:var' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:rolling' on page 4 undefined on input line 116.
-
-
-
-[4]
-
-LaTeX Warning: File `rolling_sd.png' not found on input line 120.
-
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:120: Package pdftex.def Error: File `rolling_sd.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 ...ics[width=0.85\textwidth]{rolling_sd.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `distribution.png' not found on input line 131.
-
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:131: Package pdftex.def Error: File `distribution.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 ...cs[width=0.6\textwidth]{distribution.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[3{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./figures/series.png>]
+<figures/rolling_sd.png, id=170, 650.43pt x 245.718pt>
+File: figures/rolling_sd.png Graphic file (type png)
+<use figures/rolling_sd.png>
+Package pdftex.def Info: figures/rolling_sd.png  used on input line 120.
+(pdftex.def)             Requested size: 382.12297pt x 144.3612pt.
+<figures/distribution.png, id=171, 469.755pt x 274.626pt>
+File: figures/distribution.png Graphic file (type png)
+<use figures/distribution.png>
+Package pdftex.def Info: figures/distribution.png  used on input line 131.
+(pdftex.def)             Requested size: 269.73466pt x 157.69081pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 132.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -574,81 +525,46 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 132.
 
 
-[5]
+[4 <./figures/rolling_sd.png> <./figures/distribution.png>]
 
-[6{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-<figures/acf_dy.png, id=62, 650.43pt x 289.08pt>
+[5{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+<figures/acf_dy.png, id=190, 448.074pt x 245.718pt>
 File: figures/acf_dy.png Graphic file (type png)
 <use figures/acf_dy.png>
 Package pdftex.def Info: figures/acf_dy.png  used on input line 216.
-(pdftex.def)             Requested size: 220.28354pt x 97.90213pt.
-<figures/pacf_dy.png, id=64, 650.43pt x 289.08pt>
+(pdftex.def)             Requested size: 220.28354pt x 120.8003pt.
+<figures/pacf_dy.png, id=191, 448.074pt x 245.718pt>
 File: figures/pacf_dy.png Graphic file (type png)
 <use figures/pacf_dy.png>
 Package pdftex.def Info: figures/pacf_dy.png  used on input line 217.
-(pdftex.def)             Requested size: 220.28354pt x 97.90213pt.
+(pdftex.def)             Requested size: 220.28354pt x 120.8003pt.
 
 
-[7]
+[6 <./figures/acf_dy.png> <./figures/pacf_dy.png>]
 Overfull \hbox (4.51758pt too wide) in paragraph at lines 259--260
 \T1/lmr/m/n/10.95 We es-ti-mate all ARMA($\OML/lmm/m/it/10.95 p$\T1/lmr/m/n/10.95 , $\OML/lmm/m/it/10.95 q$\T1/lmr/m/n/10.95 ) mod-els for $\OT1/lmr/m/n/10.95 ^^A\OML/lmm/m/it/10.95 y[]$ \T1/lmr/m/n/10.95 with $\OML/lmm/m/it/10.95 p; q \OMS/lmsy/m/n/10.95 ^^T \OT1/lmr/m/n/10.95 3$ \T1/lmr/m/n/10.95 and no con-stant, plus the ARMA(15,1)
  []
 
 
 
-[8 <./figures/acf_dy.png> <./figures/pacf_dy.png>]
+[7]
 
-[9]
-
-LaTeX Warning: Reference `fig:resacf' on page 10 undefined on input line 339.
-
-
-LaTeX Warning: File `acf_residuals.png' not found on input line 343.
-
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:343: Package pdftex.def Error: File `acf_residuals.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.343 ...s[width=0.6\textwidth]{acf_residuals.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[8]
+<figures/acf_residuals.png, id=225, 448.074pt x 245.718pt>
+File: figures/acf_residuals.png Graphic file (type png)
+<use figures/acf_residuals.png>
+Package pdftex.def Info: figures/acf_residuals.png  used on input line 343.
+(pdftex.def)             Requested size: 269.73466pt x 147.91934pt.
+<figures/residuals.png, id=228, 722.7pt x 260.172pt>
+File: figures/residuals.png Graphic file (type png)
+<use figures/residuals.png>
+Package pdftex.def Info: figures/residuals.png  used on input line 375.
+(pdftex.def)             Requested size: 427.07419pt x 153.74626pt.
 
 
-
-[10]
-
-LaTeX Warning: Reference `fig:res' on page 11 undefined on input line 371.
-
-
-LaTeX Warning: Reference `sec:oos' on page 11 undefined on input line 371.
-
-
-LaTeX Warning: File `residuals.png' not found on input line 375.
-
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:375: Package pdftex.def Error: File `residuals.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.375 ...hics[width=0.95\textwidth]{residuals.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[11]
-
-LaTeX Warning: Reference `sec:ma1' on page 12 undefined on input line 399.
-
+[9 <./figures/acf_residuals.png> <./figures/residuals.png>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 435.
-(C:\Users\pezzo\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+ (C:\Users\pezzo\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Overfull \hbox (4.20848pt too wide) in paragraph at lines 435--436
@@ -657,95 +573,43 @@ Overfull \hbox (4.20848pt too wide) in paragraph at lines 435--436
 
 
 
-[12{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-
-LaTeX Warning: File `out_of_sample.png' not found on input line 444.
-
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:444: Package pdftex.def Error: File `out_of_sample.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.444 ...[width=0.85\textwidth]{out_of_sample.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[10{C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+<figures/out_of_sample.png, id=247, 650.43pt x 274.626pt>
+File: figures/out_of_sample.png Graphic file (type png)
+<use figures/out_of_sample.png>
+Package pdftex.def Info: figures/out_of_sample.png  used on input line 444.
+(pdftex.def)             Requested size: 382.12297pt x 161.34488pt.
+<figures/forecast.png, id=248, 650.43pt x 274.626pt>
+File: figures/forecast.png Graphic file (type png)
+<use figures/forecast.png>
+Package pdftex.def Info: figures/forecast.png  used on input line 478.
+(pdftex.def)             Requested size: 382.12297pt x 161.34488pt.
 
 
+[11 <./figures/out_of_sample.png>]
 
-[13]
+[12 <./figures/forecast.png>]
 
-LaTeX Warning: File `forecast.png' not found on input line 478.
-
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:478: Package pdftex.def Error: File `forecast.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.478 ...phics[width=0.85\textwidth]{forecast.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[14]
-
-c:/università/magistrale computational finance/regression and time series models/time-series/report.tex:529: LaTeX Error: \begin{itemize} on input line 522 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.529 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
-[15] (report.aux)
+[13] (report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-08-13>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0A90FC413F3D26B1079ACACD33D0E48B;3936.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 522 (\begingroup)
-### bottom level 
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 0A90FC413F3D26B1079ACACD33D0E48B;3936.
+ ) 
 Here is how much of TeX's memory you used:
- 13213 strings out of 468133
- 211379 string characters out of 5430712
- 622248 words of memory out of 5000000
- 41556 multiletter control sequences out of 15000+600000
+ 13098 strings out of 468133
+ 208707 string characters out of 5430712
+ 623937 words of memory out of 5000000
+ 41437 multiletter control sequences out of 15000+600000
  717790 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,686b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,686b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/pezzo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (16 pages, 386858 bytes).
+Output written on report.pdf (14 pages, 1084064 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
