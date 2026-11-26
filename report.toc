@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Introduction and dataset}{3}{section.1}%
+\contentsline {section}{\numberline {2}Data transformation}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Levels or logarithms}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Distribution of the monthly changes}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Stationarity and order of integration}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Why the ADF and KPSS tests together}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Results}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Drift}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Is there anything to model?}{7}{section.4}%
+\contentsline {section}{\numberline {5}Identification}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}ACF and PACF}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Where the MA(1) comes from}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Order selection}{9}{section.6}%
+\contentsline {section}{\numberline {7}Estimation}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Hannan--Rissanen estimator}{9}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Estimated parameter}{9}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Diagnostic checks}{10}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Residual autocorrelation}{10}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Normality}{10}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Parameter stability}{11}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Forecast evaluation}{12}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Out-of-sample comparison}{12}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Twelve-month forecast}{13}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Double check with statsmodels}{14}{section.10}%
+\contentsline {section}{\numberline {11}Conclusions}{15}{section.11}%
